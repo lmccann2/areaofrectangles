@@ -1,0 +1,34 @@
+#levi mccann
+#CIS 2187
+#Roman Numerals
+#10/10/2019
+
+
+
+
+num = int(input("Please input a number "))
+if num == 1:
+    print("Your number is I")
+elif 0 < num <= 1:
+    print("Your number is II:")
+        
+elif  num == 3:
+    print("Your number is III")
+elif num == 4:
+    print("Your number is IV")
+elif num == 5:
+    print("Your number is V")
+elif num == 6:
+    print("Your number is VI")
+    
+elif num == 7:
+    print("Your number is VII")
+elif num == 8:
+    print("Your Number is VII")
+elif num == 9:
+    print("Your number is IX")
+elif num == 10:
+    print("Your number is X ")
+    
+else:
+    print("Outside 1 - 10")
