@@ -1,0 +1,25 @@
+#levi mccann
+#CIS 2187
+#Age Program classifier 3-3
+
+
+
+#age=float(Please enter your age ' )
+#infant =<1
+#child => 13
+
+#teenager => 
+#adult > 20
+#'''
+
+age = int(input("Age: "))
+if age <= 0:
+    print("Wrong input")
+elif 0 < age <= 1:
+    print("Infant")
+elif 1 < age < 13:
+    print("Child")
+elif 13 <= age < 20:
+    print("Teenager")
+else:
+    print("Adult")
