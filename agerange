@@ -1,0 +1,21 @@
+
+
+in_range = lambda s,e: lambda a: a in range(s,e)
+
+ages = [
+(in_range(0,2), "an infant"),
+(in_range(2,13), "a child"),
+(in_range(13,20), "a teenager"),
+(lambda a: a >= 20, "an adult"),
+
+
+while True:
+    try:
+        age = int(input("Enter this person's age: "))
+    except ValueError:
+        continue
+
+    for predicate, desc in ages:
+       if predicate(age):
+            print(f"This person is {desc}")
+            break
