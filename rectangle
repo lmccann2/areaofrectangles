@@ -1,0 +1,21 @@
+#levi mccann
+#CIS 2187
+#Rectangle are program 3-2
+
+l1 = float(input('Please enter the length of rectangle 1' ))
+w1 = float(input('Please enter the width or rectangle 1' ))
+l2 = float(input('Please enter the length of rectangle 2'))
+w2 = float(input('Please enter the width of rectangle 2' ))
+
+area1 = l1 * w1
+area2 = l2 * w2
+
+if area1 > area2:
+    print(area1)
+elif area1 == area2:
+    print('same area')
+elif area2 > area1:
+    print(area2)
+else:
+    print('same area')
+    
