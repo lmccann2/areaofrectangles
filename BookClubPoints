@@ -1,0 +1,39 @@
+#Python 3.6
+#Levi McCann
+
+#CIS 2187
+
+#10/15/2019
+
+#Book Club Points (3-11)
+
+
+
+
+
+numbooks = int(input('Please enter the number of books you purchased. '))
+
+print('You have purchased' , numbooks, 'books.')
+
+
+if numbooks == 0:
+    
+  numbooks = no_books
+    
+  print('You have no points')
+
+elif numbooks >= 2 and numbooks < 4:
+
+    print('You have 2 Points')
+
+elif numbooks >= 4 and numbooks <= 5:
+
+    print('You have 15 points')
+
+elif numbooks >= 6 and numbooks <= 7:
+
+    print('You have 30 points')
+
+else:
+
+    print('You have 60 points')
