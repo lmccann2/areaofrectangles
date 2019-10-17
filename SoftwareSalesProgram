@@ -1,0 +1,36 @@
+#Python 3.6
+#Levi McCann
+#10/17/2019
+#Software Sales Program (3-12)
+#CIS2187
+
+
+
+SOFTWAREPRICE = 99
+
+num_packages = int(input('Enter the number of softare packages purchase: '))
+
+full_amt = num_packages * SOFTWAREPRICE
+
+discount = 0
+
+if num_packages <= 9:
+    print('Discount Amount: $ 0.00')
+    print('Total amount: $', full_amt)
+elif num_packages >= 10 and num_packages <=19:
+    discount = full_amt * 0.1
+    print('Your discount is: $ ', discount)
+
+elif num_packages >= 20 and num_packages <=49:
+    discount = full_amt * 0.2
+    print('Your discount is: $ ', discount)
+    
+elif num_packages >= 50 and num_packages <=99:
+    discount = full_amt * 0.3
+    print('Your discount is: $ ', discount)
+else:
+    discount = full_amt * 0.4
+    print('Your discount is: $ ', discount)
+    
+finalprice = full_amt - discount
+print('The Total Amount: $ ', finalprice)
