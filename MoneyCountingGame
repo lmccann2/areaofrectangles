@@ -1,0 +1,34 @@
+#Levi McCann
+#10/17/2019
+#Money Counting Program (3-10)
+#CIS2187
+#python 3.7
+
+
+
+pennies = int(input('Please enter the number of pennies: '))
+
+nickels = int(input('Please enter the number of nickels: ' ))
+
+dimes = int(input('Please enter the number of dimes: '))
+
+quarters = int(input('Please enter the number of quarters: '))
+
+dollar = 100
+
+
+total = (pennies * 1) + (nickels * 5) + (dimes * 10) + (quarters * 25)
+
+
+if total < dollar:
+    print('Too Low, Maybe next time!')
+
+
+elif total > dollar:
+
+    print('Too high, Maybe next time!')
+
+
+else:
+
+    print('You win, Congrats!')
