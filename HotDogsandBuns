@@ -1,0 +1,53 @@
+#Levi McCann
+#Hot Dogs 3-8
+#10/17/2019
+#Python 3.7.4
+
+HOT_DOGS_PER_PKG = 10
+BUNS_PER_PKG = 8
+
+num_Attending = 0
+num_PerPerson = 0
+total = 0
+min_Dogs = 0
+min_Buns = 0
+
+dogs_Left = 0
+buns_Left = 0
+
+num_Attending = int(input('Enter the number of people attending the Hot Dog Cookout: '))
+
+num_PerPerson = int(input('Enter the number of hot dogs for each person: '))
+total = num_Attending * num_PerPerson
+min_Dogs = total // HOT_DOGS_PER_PKG
+#num_PerPerson = int(input('Enter the number of hot dogs for each person: '))
+
+if min_Dogs > 0:
+    dogs_Left = total % HOT_DOGS_PER_PKG
+    if dogs_Left != 0:
+        min_Dogs += 1
+else:
+    min_Dogs = 1
+    HOT_DOGS_PER_PKG * min_Dogs - total
+
+    dogs_Left = HOT_DOGS_PER_PKG * min_Dogs - total #Hot Dogs Left
+    min_Buns = total // BUNS_PER_PKG   #How many pkgs of Hot Dog Buns needed
+    
+    if buns_Left != 0:
+        min_Buns += 1
+    
+    else:
+        min_Buns = 1
+
+buns_Left = BUNS_PER_PKG * min_Buns - total
+#Program Out Put should look like below
+#Enter the number of people attending the cookout:  33
+#Enter the number of hot dogs for each person:  3
+#Minimum packages of hot dogs needed: 10
+#Minimum packages of hot dog buns needed: 13
+#Hot dogs left over: 1
+#Hot dog buns left over: 5
+print('The packages of hot dogs needed:', min_Dogs)
+print('Minimum packages of hot dog buns needed:', min_Buns)
+print('Hot dogs left over:', dogs_Left)
+print('Hot dog buns left over:', buns_Left)
